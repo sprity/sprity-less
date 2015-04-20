@@ -1,0 +1,49 @@
+{
+  "name": "sprity-less",
+  "version": "1.0.0",
+  "description": "less style processor for sprity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sprity/sprity-less.git"
+  },
+  "homepage": "https://github.com/sprity/sprity-less",
+  "bugs": {
+    "url": "https://github.com/sprity/sprity-less/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sprity/sprity-less/blob/master/LICENSE-MIT"
+    }
+  ],
+  "author": {
+    "name": "Alexander Slansky",
+    "email": "alexander@slansky.net",
+    "url": "http://slansky.net"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "hint": "eslint index.js",
+    "style": "jscs index.js"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "sprites",
+    "sprite",
+    "less",
+    "sprity",
+    "css-sprite"
+  ],
+  "dependencies": {
+    "bluebird": "^2.9.16",
+    "fs-extra": "^0.16.5"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.1.0",
+    "less": "^2.5.0"
+  }
+}

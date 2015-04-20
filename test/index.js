@@ -80,7 +80,6 @@ describe('sprity-less', function () {
           lang: 'css',
           mode: 'beautify'
         })[0];
-        fs.writeFileSync('test/expected/style.less', style, {encoding: 'utf-8'});
         style.should.equal(fs.readFileSync('test/expected/style.less').toString());
         done();
       });

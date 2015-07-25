@@ -11,7 +11,8 @@ var getTemplate = function () {
 var transform = Promise.method(function (layouts, source, opt, Handlebars) {
   var template = Handlebars.compile(source);
   return template({
-    layouts: layouts
+    layouts: layouts,
+    opt: opt
   });
 });
 
